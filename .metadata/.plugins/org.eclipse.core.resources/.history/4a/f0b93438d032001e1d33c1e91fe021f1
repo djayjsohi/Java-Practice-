@@ -1,0 +1,23 @@
+package com.deepak.searching;
+
+public class Bubblesort {
+    public static void main(String[] args){
+
+        int arr[]= {36,19,25,16,7};
+        int len=arr.length;
+        for(int i=0;i<len;i++) {
+            for(int j=0;i<len-i-1;i++) {
+
+                if(arr[j]>arr[j+1]) {
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+
+        }
+        for(int i=0;i<len;i++) {
+            System.out.println(arr[i]);
+        }
+    }
+}

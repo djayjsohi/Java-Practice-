@@ -1,0 +1,22 @@
+package com.example.demo.lambda;
+
+public class Main {
+public static void main(String[] args) {
+	System.out.println("Hello this main");
+    MyInter i=new MyInter() {
+    	public void sayHello() {
+    		System.out.println("Thus is an class");
+    	}
+    };
+   i.sayHello();
+   
+   SumInter sumInter=( a , b)-> 
+	    a+b;
+   
+  System.out.println(sumInter.sum(19,10));
+  System.out.println(sumInter.sum(8, 8));
+  
+  LengthInter lengthInter =str-> str.length();
+  System.out.println(lengthInter.getLength("deepak joshi"));
+}
+}

@@ -1,0 +1,25 @@
+package com.example.demo.lambda;
+
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+		
+		
+		Runnable thread1=()->{
+			for(int i=0;i<=10;i++) {
+				System.out.println("the value of thread:" +i);
+				try {
+					Thread.sleep(1000);
+				}catch(InterruptedException e) {
+				e.printStackTrace();
+				}
+			}
+		
+		};
+		
+		Thread thread=new Thread(thread1);
+		   thread.setName("deepak's thread");
+		   	thread.start();
+	}
+
+}

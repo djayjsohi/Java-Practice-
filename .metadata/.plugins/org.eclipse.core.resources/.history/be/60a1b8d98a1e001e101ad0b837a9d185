@@ -1,0 +1,15 @@
+package com.example.demo;
+
+public class F {
+	public static int factorial(int n) {
+		if (n == 1) {
+			return 1;}
+		else {
+			return (n * factorial(n - 1));}
+	}
+ public static void main(String[] args) {
+	// System.out.println(F.factorial(5));
+	 byte b=126;
+	 System.out.println(b);
+ }
+}

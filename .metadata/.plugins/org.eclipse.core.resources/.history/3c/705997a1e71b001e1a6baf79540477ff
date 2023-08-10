@@ -1,0 +1,22 @@
+package com.example.demo;
+import java.util.Scanner;
+public class nfibonacci {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int n =sc.nextInt();
+	
+	int x=0;
+	int y=1;
+	int z ;
+	
+	for(int i=0;i<n;i++)
+	{
+		z=x+y;
+		x=y;
+		y=z;
+	}
+	System.out.println("Enter the nth number:");
+	
+	System.out.println(z);
+}
+}

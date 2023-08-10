@@ -1,0 +1,52 @@
+package com.example.demo;
+import java.util.ArrayList;
+
+import java.util.List;
+public class ArrayListLearn {
+	
+	
+	
+	public static void main(String [] args) {
+		
+		
+		ArrayList<String> EmpName= new ArrayList<> ();
+		EmpName.add("Deepak");
+		EmpName.add("Joshi");
+		EmpName.add("DJ");
+		EmpName.add("rehan");
+		EmpName.add("Jyodha");
+		EmpName.add("dell");
+		EmpName.add("acer");
+		EmpName.add("asus");
+		EmpName.add("leneo");
+		
+		
+		System.out.println(EmpName);
+		
+		
+	  List<String> Stuname=new ArrayList<> ();
+	  
+	  
+	     Stuname.add("1");
+	     Stuname.add("2");
+	     
+	     Stuname.add("3");
+	     Stuname.add("1"); 
+	     
+	     
+	     System.out.println(Stuname);
+	     
+	     Stuname.add("5");
+	     
+	     Stuname.add(4, "50");
+	     
+	     
+	     System.out.println(Stuname);
+	     
+	     
+	 List<String> newList=new List<>();
+	 
+		
+	}
+  
+}

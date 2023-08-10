@@ -1,0 +1,44 @@
+package com.example.demo;
+import java.util.Scanner;
+
+
+/*public class Fibonacci {
+  public static void main(String[] args) {
+	  int num1=0, num2=1 , fib;
+	  
+	  System.out.println(num1);
+     System.out.println(num2);
+     
+     int count=15;
+     for(int i=0;i<=count;i++) {
+    	 fib=num1+num2;
+    	 System.out.println(fib);
+    	 num1=num2;
+    	 num2=fib;
+     }
+
+
+  }
+
+}
+
+*/
+// suppose want to find nth fibonaci num
+
+ public class Fibonacci{
+	 public static void main(String[] args) {
+		int a=0;
+		int b=1;
+		int c;
+		 Scanner sc=new Scanner(System.in);
+		 System.out.println("Enter the nth number: " );
+		 int n =sc.nextInt();
+		for(int i=1;i<n;i++) {
+			c=a+b;
+			a=b;
+			b=c;
+		}
+		System.out.println(a);	
+	}
+	
+ }

@@ -1,0 +1,28 @@
+package com.example.demo;
+
+public class FibonacciRecursion {
+
+	public static void main(String[] args) {
+		long startTime=System.currentTimeMillis();
+		int n=50;
+		long result = fibNth(n);
+		long endTime=System.currentTimeMillis();
+		long timeDiff=endTime-startTime;
+		System.out.println(n+"th fibonacci number is : "+result +" calculated in "+timeDiff+" ms");
+		System.out.println(fibNth(n));
+	}
+
+	private static long fibNth(int n) {
+		
+		if (n==1)
+		  return 0;
+		else if(n==2)
+		   return 1;
+		else 
+			return fibNth(n-1)+fibNth(n-2);
+		
+	}
+	
+	
+	}
+	

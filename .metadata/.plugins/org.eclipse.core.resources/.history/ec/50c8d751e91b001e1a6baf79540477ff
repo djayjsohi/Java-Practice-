@@ -1,0 +1,26 @@
+package com.example.demo;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+  public static void main(String[] args) {
+	  int num1=0, num2=1 , nth;
+	  Scanner sc=new Scanner(System.in);
+	   int n= sc.nextInt();
+	   
+	  System.out.println(num1);
+     System.out.println(num2);
+     
+     
+     for(int i=0;i<=n;i++) {
+    	 nth=num1+num2;
+    	 num1=num2;
+    	 num2=nth;
+    	 System.out.println(num1);
+    	
+     }
+
+
+  }
+
+}

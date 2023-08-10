@@ -1,0 +1,15 @@
+package com.deepak.lists;
+
+import java.util.LinkedList;
+
+public class DeepakListTest {
+	public static void main(String[] args) {
+		LinkedList<Integer> intLL=new LinkedList<>();
+		DeepakList intDL= new DeepakList();
+		intLL.add(1);
+		intDL.add(1);
+		
+		intLL.add(2);
+		intDL.add(2);
+	}
+}

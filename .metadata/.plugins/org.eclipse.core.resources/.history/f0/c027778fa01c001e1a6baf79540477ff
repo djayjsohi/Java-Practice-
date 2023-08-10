@@ -1,0 +1,42 @@
+package com.example.demo;
+import java.util.Scanner;
+
+
+/*
+public class PalimdromeCheck {
+	public static boolean isPalimdrome(String Input) {
+		
+		if(Input==null) {
+			
+		throw new IllegalArgumentException("cant be null");
+		
+	}
+		StringBuilder Sb= new StringBuilder(Input);
+		StringBuilder reversed=Sb.reverse();
+	return reversed.toString().equals(Input);
+	}
+public static void main(String[] args) {
+	System.out.println(PalimdromeCheck.isPalimdrome("keek"));
+}
+}              
+
+*/
+
+public class PalimdromeCheck{
+	public static boolean isPalimdrome(String input) {
+		  Scanner sc=new Scanner(System.in);
+		    String input1 =sc.next(input);
+				 System.out.println("enter the string");
+				
+		  
+		 StringBuilder sb=new StringBuilder(input);
+		 StringBuilder reversed=sb.reverse();
+		  return reversed.toString().equals(input);
+		public static void main(String[] args) {
+			System.out.println(palimdromCheck.isPalimdrome);
+		}
+		
+		 
+		
+	}
+}

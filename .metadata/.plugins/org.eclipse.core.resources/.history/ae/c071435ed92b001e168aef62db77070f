@@ -1,0 +1,47 @@
+package com.example.demo;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+public class stream {
+
+	public static void main(String[] args) {
+		List<Integer> nums=Arrays.asList(9,5,6,7,8,3);
+        Stream<Integer> data=nums.stream();
+
+	//data.forEach(L-> System.out.println(L)); //this foreach just printing the values
+	
+	//data.forEach(L-> System.out.println(L)); // we cant use same stream again
+	
+	//Long  count = data.count();
+	
+	//System.out.println(count);
+	
+	//Stream <Integer> sortedData=data.sorted();
+	//sortedData.forEach(n-> System.out.println(n));
+	
+	//for (int n: nums) {
+		//System.out.println(n*2);
+	//}
+	
+        
+        
+    int result=nums.stream()
+       .sorted()
+       .map(n->n*2)
+       //.forEach(n->System.out.println(n));
+      .reduce(0,(c,e)->c+e);
+	System.out.println(result);
+	
+	
+	List<String> name= Arrays.asList("Deepak","Anil","Ankit","Abhinav","Anil");
+	List<String> newName=name.stream().filter(e->e.startsWith("A")).collect(Collectors.toList());
+	System.out.println(newName);
+	
+	List<Integer> numbers =List.of(1,4,6,7,8,5,6);
+	List<Integer> newNumber=numbers.stream().map(i-> i*i).collect(Collectors.toList());
+	System.out.println(newNumber);
+	
+	}
+
+}

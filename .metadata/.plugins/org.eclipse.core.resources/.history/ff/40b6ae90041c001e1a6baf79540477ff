@@ -1,0 +1,19 @@
+package com.example.demo;
+public class explicitconversion {
+	public static void main(String[] args) {
+	
+	//done by programmer 
+	//when we want convert higher value data type into lower data type value
+	
+	double d=100.89;
+	 long l= (int)d;
+	
+	 int i=(int)l;
+	 
+	 System.out.println("double vale:" + d);
+	 System.out.println("long value:" + l);
+	 System.out.println("int value:" + i);
+	 
+	} 
+
+}

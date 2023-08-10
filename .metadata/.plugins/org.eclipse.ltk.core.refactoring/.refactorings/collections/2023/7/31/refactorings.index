@@ -1,0 +1,7 @@
+1690716462379	Rename local variable 'strLLinkedList'
+1690716566271	Extract local variable 'asList'
+1690719027211	Delete element
+1690719030789	Delete element
+1690721344641	Extract method 'constructList'
+1690722302856	Rename type 'MyNode'
+1690791626910	Rename package 'com.collection.set'
